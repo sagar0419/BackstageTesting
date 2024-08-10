@@ -65,6 +65,17 @@ techdocs:
 auth:
   # see https://backstage.io/docs/auth/ to learn about auth providers
   providers:
+    github:
+      development:
+        clientId: ${GITHUB_CLIENT_ID}
+        clientSecret: ${GITHUB_CLIENT_SECRET}
+        enableExperimentalRedirectFlow: true
+# ENABLE THIS IF YOU ARE USING GITHUB ENTERPRISE AND WANT TO VERIFY A ORG USER
+        # signIn:
+        #   resolvers:
+        #     - resolver: usernameMatchingUserEntityName
+        #     - resolver: emailMatchingUserEntityProfileEmail
+        #     - resolver: emailLocalPartMatchingUserEntityName
     # See https://backstage.io/docs/auth/guest/provider
     guest: {}
 
@@ -72,6 +83,16 @@ scaffolder:
   # see https://backstage.io/docs/features/software-templates/configuration for software template options
 
 catalog:
+# ENABLE THIS IF YOU ARE USING GITHUB ENTERPRISE AND WANT TO VERIFY A ORG USER
+  # providers:
+  #   githubOrg:
+  #     id: production
+  #     githubUrl: https://github.com
+  #     # orgs: ['organization-1', 'organization-2', 'organization-3']
+  #     schedule:
+  #       initialDelay: { seconds: 30 }
+  #       frequency: { hours: 1 }
+  #       timeout: { minutes: 50 }
   import:
     entityFilename: catalog-info.yaml
     pullRequestBranchName: backstage-integration
