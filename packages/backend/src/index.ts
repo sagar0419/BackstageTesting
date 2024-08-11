@@ -8,7 +8,13 @@
 
 import { createBackend } from '@backstage/backend-defaults';
 
+// JIRA
+import jiraDashboard from '../../../plugins/jiraDashboard';
+
 const backend = createBackend();
+
+// Jira
+backend.add(import('@axis-backstage/plugin-jira-dashboard-backend'));
 
 backend.add(import('@backstage/plugin-app-backend/alpha'));
 backend.add(import('@backstage/plugin-proxy-backend/alpha'));

@@ -2,7 +2,10 @@ apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
   name: ${{ values.name | dump }}
+  annotations:
+    jira.com/project-key: "SAGAR"
+  title: "Sagar Parmar"
 spec:
   type: service
-  owner: user:guest
+  owner: user:sagar0419
   lifecycle: experimental

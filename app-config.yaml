@@ -62,6 +62,14 @@ techdocs:
   publisher:
     type: 'local' # Alternatives - 'googleGcs' or 'awsS3'. Read documentation for using alternatives.
 
+# JIRA Integration
+jiraDashboard:
+  token: Basic c2FnYXIucGFybWFyQGluZnJhY2xvdWQuaW86QVRBVFQzeEZmR0YwZHlIcmtFMmVaZG1mWEZ1WGRjZm5xOXRUWDlXcTNfaXotbldBSUN6NTRmcERUT29mVGhDcXlKdzdSbVA1LXNJenFkZnNPTk5rekJsb1ZxdzRTcGNsLUU4TkIwaHVCQ0E5b0J1Z0wxQmRBTUdYZjVhZDRMZmtBbkZ6ZGQxNS1hSHFHY3czalhfTmRORDRVYjhmTWZpU3dXeHNhYTVmUXZqcHNROUpwRXU5VTJJPTdCRjNDQTcx
+  baseUrl: https://anuragpachauri.atlassian.net/rest/api/2/
+  # userEmailSuffix: ${JIRA_EMAIL_SUFFIX} 
+  # annotationPrefix: ${JIRA_ANNOTATION_PREFIX} # Optional
+
+
 auth:
   # see https://backstage.io/docs/auth/ to learn about auth providers
   providers:
