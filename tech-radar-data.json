@@ -1,0 +1,76 @@
+{
+    "entries": [
+      {
+        "id": "typescript",
+        "title": "Sagar",
+        "description": "TypeScript is a typed superset of JavaScript",
+        "key": "typescript",
+        "url": "https://www.typescriptlang.org/",
+        "quadrant": "languages",
+        "timeline": [
+          {
+            "moved": 0,
+            "ringId": "adopt",
+            "date": "2024-01-01"
+          }
+        ]
+      },
+      {
+        "id": "react",
+        "title": "React",
+        "description": "A JavaScript library for building user interfaces",
+        "key": "react",
+        "url": "https://reactjs.org/",
+        "quadrant": "frameworks",
+        "timeline": [
+          {
+            "moved": 0,
+            "ringId": "adopt",
+            "date": "2024-01-01"
+          }
+        ]
+      },
+      {
+        "id": "kubernetes",
+        "title": "Kubernetes",
+        "description": "Container orchestration platform",
+        "key": "kubernetes",
+        "url": "https://kubernetes.io/",
+        "quadrant": "infrastructure",
+        "timeline": [
+          {
+            "moved": 0,
+            "ringId": "adopt",
+            "date": "2024-01-01"
+          }
+        ]
+      },
+      {
+        "id": "backstage",
+        "title": "Backstage",
+        "description": "An open platform for building developer portals",
+        "key": "backstage",
+        "url": "https://backstage.io/",
+        "quadrant": "tools",
+        "timeline": [
+          {
+            "moved": 1,
+            "ringId": "trial",
+            "date": "2024-01-01"
+          }
+        ]
+      }
+    ],
+    "quadrants": [
+      { "id": "languages", "name": "Languages" },
+      { "id": "frameworks", "name": "Frameworks" },
+      { "id": "infrastructure", "name": "Infrastructure" },
+      { "id": "tools", "name": "Tools" }
+    ],
+    "rings": [
+      { "id": "adopt", "name": "Adopt", "color": "#93c47d" },
+      { "id": "trial", "name": "Trial", "color": "#93d2c2" },
+      { "id": "assess", "name": "Assess", "color": "#fbdb84" },
+      { "id": "hold", "name": "Hold", "color": "#efafa9" }
+    ]
+  }
